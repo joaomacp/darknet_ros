@@ -1,0 +1,5 @@
+classes = 3
+train = data/traffic_first/train.txt
+valid = data/traffic_first/test.txt
+names = data/traffic_first_classes.txt
+backup = data/traffic_first_backup

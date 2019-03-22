@@ -1,0 +1,16 @@
+yolo_model:
+
+  config_file:
+    name: yolov3-traffic_first-tiny.cfg
+  weight_file:
+    name: 15-03-0000_4300.weights
+  threshold:
+    value: 0.25
+  detection_classes:
+    names:
+      - info_bus
+      - info_headlights
+      - warn_hole
+
+image_view:
+  enable_opencv: false

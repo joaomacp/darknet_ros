@@ -28,6 +28,7 @@
 #include <image_transport/image_transport.h>
 
 // OpenCv
+#include <opencv2/core/core.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/objdetect/objdetect.hpp>
