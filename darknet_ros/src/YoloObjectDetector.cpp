@@ -198,9 +198,9 @@ void YoloObjectDetector::cameraCallback(const sensor_msgs::ImageConstPtr& msg)
       imageHeader_ = msg->header;
 
       // let's flip it
-      cv::Mat camImageToFlip = cam_image->image.clone();
-      cv::flip(camImageToFlip, camImageCopy_, 0);
-      // before flipping camImageCopy_ = cam_image->image.clone();
+      // cv::Mat camImageToFlip = cam_image->image.clone();
+      // cv::flip(camImageToFlip, camImageCopy_, 0);
+      camImageCopy_ = cam_image->image.clone();
     }
     {
       boost::unique_lock<boost::shared_mutex> lockImageStatus(mutexImageStatus_);
